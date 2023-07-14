@@ -1,0 +1,163 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Martel+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html , body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.signup-navbar{
+  border-bottom: 1px solid #e6e6e6;
+}
+.browse-navbar{
+  box-shadow:
+  inset 0px 50px 40px rgba(0,0,0,0.5)
+;
+}
+.browsmainage{
+border-left: 3px solid #dcdcdc;
+font-size: 20.669px;
+}
+.email-signup-form-2{
+  border: 1px solid #838383bf;
+}
+.one-Price-Card{
+  border-radius: 12px;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  cursor: pointer;
+
+}
+.one-Price-Card:hover{
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.pricing-card-icon{
+  scale: 0;
+  transition: 200ms;
+}
+.price-card-text{
+  transform: translateX(-27%);
+  transition: 200ms;
+  text-transform: capitalize;
+  color: black;
+}
+.activecard{
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.activecard .price-card-text{
+  transform: translateX(0%);
+  color: white;
+}
+.activecard .pricing-card-icon{
+  scale: 1
+}
+.activecard .btn-red {
+  color: red;
+}
+.activecard .btn-purple {
+  color: purple;
+}
+.activecard .btn-blue { 
+  color : blue
+}
+
+.Genre-explore-more{
+  transform: translateX(-10%);
+  text-transform: capitalize;
+  font-weight: 600;
+  opacity: 0;
+  transition: 1s;
+  
+}
+.genre-icon{
+  opacity: 1;
+  transform: translateX(-630%);
+  transition: 800ms;
+  font-weight: 900;
+}
+.Genre-left:hover .Genre-explore-more{
+  transform: translateX(15%);
+
+  opacity: 1;
+}
+.Genre-left:hover .genre-icon{
+  transform: translateX(100%);
+}
+.movies-container { 
+  box-shadow:
+  0px -200px 98.7px #141414,
+  0px -150px 133.2px #141414,
+  0px -150px 158px #141414,
+  0px -150px 179.6px #141414,
+  0px -150px 201.1px #141414,
+  0px -150px 224.7px #141414,
+  0px -150px 253.2px #141414,
+  0px -150px 290.7px #141414,
+  0px -150px 347px #141414,
+  0px -150px 479px #141414
+;
+}
+@media (width < 1043px) {
+  .plan-pricing-container {
+    width: 440px;
+  }
+  .pricing-cards-plan{
+    flex-direction: column;
+  }
+  .one-Price-Card{ 
+    width: 440px;
+  }
+  .signup-go-button{
+
+  }
+}
+@media (width<800px) {
+  .signup-go-button{
+    width: 305px;
+  }
+}
+@media (width<523px) {
+  .plan-pricing-container,.one-Price-Card ,.plan-confirme-button{
+    width: 328px;
+  }
+  .signup-go-button{
+    width: 200px;
+  }
+  .signup-page-image{
+    scale: 2;
+  }
+  .singup-1-step{
+    width: 100%;
+    text-align: start;
+    
+  }
+  .singup-1-step p {
+    width: 100%;
+  }
+  .singup-1-step button { 
+    max-width: 300px;
+  }
+  .signup-2-step{
+    padding: 0 20px;
+  }
+  .signup-2-step button{
+    width: 320px;
+  }
+  .signup-step-2-input{
+    width: 320px;
+  }
+}
