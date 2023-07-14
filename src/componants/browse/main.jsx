@@ -3,11 +3,12 @@ import BrowseNavBar from "../../utilities/browsnavbar";
 import {FaPlay,FaExclamationCircle} from 'react-icons/fa'
 import Genre from "../../utilities/browsmaintype";
 import OneCard from "../../utilities/browsemoviecard";
+import img from "../../../public/imgs/browsmainimg.webp"
 const MainBrows = () => { 
     return(
         <>
             <div>
-                <img src="public/imgs/browsmainimg.webp" alt="" className="w-[fill] absolute top-0 left-0 -z-10 brightness-55  main-image"/>
+                <img src={img} alt="" className="w-[fill] absolute top-0 left-0 -z-10 brightness-55  main-image"/>
             </div>
             <div className="flex flex-col mb-[350px]">
                 <BrowseNavBar/>

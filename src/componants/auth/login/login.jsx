@@ -3,6 +3,8 @@ import {AiOutlineGlobal} from 'react-icons/ai'
 import Select from 'react-select';
 import "./login.css"
 import { Link } from "react-router-dom";
+import logo from "../../../../public/imgs/logo.png"
+import bg from "../../../../public/imgs/login-bg.jpg"
 function Selectoptions() {
     const options = [
         { value: 'english', label: 'English' },
@@ -105,9 +107,9 @@ const Login = () => {
     return (
         <div className="flex flex-col min-h-screen">
         <div className="headerandloginform flex-grow">
-        <div className="Login-page-image"></div>
+        <div className="Login-page-image"><img src={bg} alt="" className="Login-page-image" /></div>
         <div className="header w-full pt-[4px] ">
-            <img src="public/imgs/logo.png" alt="Logo" className=" w-[210px] ml-[34px]" />
+            <img src={logo} alt="Logo" className=" w-[210px] ml-[34px]" />
         </div>
         <div className="login-form-container flex justify-center items-center bg-red mb-[90px]">
             <div className="login-form bg-[#000000bf] flex flex-col min-w-[380px] min-h-[660px] px-[68px] pt-[50px] pb-[40px] rounded">
@@ -135,7 +137,7 @@ const Login = () => {
                         <p className=" text-[#b3b3b3] text-[13px]">need help ?</p>
                 </div>
                 <div className="w-[314px] flex flex-col gap-[8px]">
-                    <p className="text-[#737373] text-[16px]">New to Netflix? <Link to="/signup"><span className="text-white font-[400]">Sign up now.</span></Link></p>
+                    <p className="text-[#737373] text-[16px]">New to Netflix? <Link to="/"><span className="text-white font-[400]">Sign up now.</span></Link></p>
                     <p className="text-[#8c8c8c] text-[13px]">This page is protected by Google reCAPTCHA to ensure you're not a bot. <span className="text-[#0071eb]">Learn more.</span></p>
                 </div>
             </div>

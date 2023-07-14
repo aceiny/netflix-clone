@@ -2,12 +2,13 @@ import React from "react";
 import { browsnavdata } from "../componants/browse/data/maindata";
 import { Link } from "react-router-dom";
 import {LuSearch} from 'react-icons/lu'
+import logo from '../../public/imgs/logo.png'
 const BrowseNavBar = () => { 
     return (
      <>
         <div className="browse-navbar flex justify-between items-center px-[48px] py-[10px]">
             <div className=" flex gap-[33px] items-center"> 
-                <div className=""><Link to='../browse'><img src="public/imgs/logo.png" className="w-[115px]" alt="" /></Link></div>
+                <div className=""><Link to='../browse'><img src={logo} className="w-[115px]" alt="" /></Link></div>
                 <div>
                     <ul className="flex gap-[20px]">
                         {browsnavdata.map((v,i)=>{

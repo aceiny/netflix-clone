@@ -137,9 +137,6 @@ font-size: 20.669px;
   .signup-go-button{
     width: 200px;
   }
-  .signup-page-image{
-    scale: 2;
-  }
   .singup-1-step{
     width: 100%;
     text-align: start;
@@ -159,5 +156,10 @@ font-size: 20.669px;
   }
   .signup-step-2-input{
     width: 320px;
+  }
+}
+@media (width < 750px) {
+  .signup-page-image, .image-singup-background{
+    scale: 2;
   }
 }

@@ -50,12 +50,10 @@ body{
     display: none;
 }
 .signup-page-image{
-    background-image: url('public/imgs/signup-bg.jpg');
     background-position: center;
     background-size: cover;
     position: absolute;
-    width: 150%;
-    scale: 1.1;
+    width: 130%;
     top: -10%;
     z-index: -1;
     height: 100%;

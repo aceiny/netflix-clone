@@ -5,6 +5,14 @@ import {TbCircleX} from 'react-icons/tb'
 import {BsPlusLg} from 'react-icons/bs'
 import Select from "react-select";
 import { Link } from "react-router-dom";
+import bg from '../../../../public/imgs/signup-bg.jpg'
+import logo from '../../../../public/imgs/logo.png'
+import iconfig from '../../../../public/imgs/download-icon.gif'
+import tv from "../../../../public/imgs/tv.png"
+import mobile from "../../../../public/imgs/mobile-0819.jpg"
+import boxshot from "../../../../public/imgs/boxshot.png"
+import devicepile from "../../../../public/imgs/device-pile.png"
+import lastpic from "../../../../public/imgs/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png"
 function Selectoptions() {
     const options = [
         { value: 'english', label: 'English' },
@@ -96,14 +104,14 @@ const Signup = () =>   {
     return(
         <>
         <div className="signup-top flex flex-col gap-[200px] overflow-hidden">
-            <div className="signup-page-image"></div>
+            <div className="signup-page-image"><div><img src={bg} alt="" className="w-full h-full scale-150 image-singup-background"/></div></div>
             <div className="header flex justify-between px-[8%] items-center">
                 <div className="signup-logo">
-                    <img src="public/imgs/logo.png" className="w-[160px]" alt="" />
+                    <img src={logo} className="w-[160px]" alt="" />
                 </div>
                 <div className="signup-rigt-header flex items-center gap-[15px]">
                     <Selectoptions/>
-                    <button className="w-[75px] h-[27px] py-[4px] px-[16px] bg-[#e50914] text-[14px] font-[500] rounded text-white">Sign in</button>
+                   <Link to="login"> <button className="w-[75px] h-[27px] py-[4px] px-[16px] bg-[#e50914] text-[14px] font-[500] rounded text-white">Sign in</button></Link>
                 </div>
             </div>
             <div className="flex flex-col items-center justify-center w-full gap-[9px] mb-[187px] text-white mt-1 px-8">
@@ -125,20 +133,20 @@ const Signup = () =>   {
                 <p className="text-[24px]">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
             </div>
             <div>
-                <img src="public/imgs/tv.png" alt="tv" className="w-[100%] max-h-[541.938px]"/>
+                <img src={tv} alt="tv" className="w-[100%] max-h-[541.938px]"/>
             </div>
         </div>
         <div className="signup-third flex justify-between px-[10%] py-[72px] bg-black items-center ">
             <div className="relative">
-                <img src="public/imgs/mobile-0819.jpg" alt="tv" className="min-w-[722px] h-[541.938px]"/>
+                <img src={mobile} alt="tv" className="min-w-[722px] h-[541.938px]"/>
                 <div className="signup-download-offlinemode flex items-center gap-4 px-[12px] py-2 rounded-xl w-[361px] justify-between bg-black download-card">
-                    <div className="flex gap-4 items-center"><img src="public/imgs/boxshot.png" alt="boxshot" className="w-[57px] h-[80px]" />
+                    <div className="flex gap-4 items-center"><img src={boxshot} alt="boxshot" className="w-[57px] h-[80px]" />
                     <div className="signup-download-offlinemode-text">
                     <p className=" text-[16px] text-white">Stranger Things</p>
                     <p className=" text-[#0071eb] text-[14px]">Downloading...</p>
                     </div></div>
                     <div>
-                        <img src="public/imgs/download-icon.gif" alt="" className="download-offline"/>
+                        <img src={iconfig} alt="" className="download-offline"/>
                     </div>
                 </div>
             </div>
@@ -153,12 +161,12 @@ const Signup = () =>   {
                 <p className="text-[24px]">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
             </div>
             <div>
-                <img src="public/imgs/device-pile.png" alt="tv" className="w-[100%] max-h-[541.938px]"/>
+                <img src={devicepile} alt="tv" className="w-[100%] max-h-[541.938px]"/>
             </div>
         </div>
         <div className="signup-fifth flex justify-between px-[10%] py-[72px] bg-black items-center">
             <div>
-                <img src="public/imgs/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png" alt="tv" className="w-[722.656px] max-h-[541.938px]"/>
+                <img src={lastpic} alt="tv" className="w-[722.656px] max-h-[541.938px]"/>
             </div>
             <div className="text-white max-w-[700px]">
                 <h1 className="text-[48px] font-[900]">Create profiles for kids</h1>
