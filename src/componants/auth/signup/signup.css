@@ -53,10 +53,9 @@ body{
     background-position: center;
     background-size: cover;
     position: absolute;
-    width: 50vw;
+    width: 100vw;
     top: -10%;
     z-index: -1;
-    height: 100%;
     filter: brightness(0.3);
 }
 .signup-top,.signup-second,.signup-third,.signup-forth,.signup-fifth,.signup-last{
