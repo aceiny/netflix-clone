@@ -50,6 +50,7 @@ body{
     display: none;
 }
 .signup-page-image{
+    overflow-x : hidden;
     background-position: center;
     background-size: cover;
     position: absolute;
