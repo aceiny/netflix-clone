@@ -53,7 +53,7 @@ body{
     background-position: center;
     background-size: cover;
     position: absolute;
-    width: 100vw;
+    width: 50vw;
     top: -10%;
     z-index: -1;
     height: 100%;
